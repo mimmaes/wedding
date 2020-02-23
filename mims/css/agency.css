@@ -5,6 +5,7 @@
  */
 
 :root {
+    --color-gray: #7b8a8b;;
     --main-color-primary: #e8a43dd1;
     --main-color-secondary: #fec503;
     --main-color-secondary-dark: #333;
@@ -355,7 +356,7 @@ header.partyDetails {
     padding: 1rem 0;
 }
 .partyAgenda .activity .descr{
-    color: #7b8a8b;
+    color: var(--color-gray);
 }
 
 #venue {
@@ -370,22 +371,50 @@ header.partyDetails {
     /* bottom, image */
     url(../img/jolly_sportsman.jpg) no-repeat center center;
     background-size: cover;
-    height: 500px;
+    height: 200px;
     font-family: var(--font-secondary);
     text-align: center;
 }
 
-#venue h1 {
+#venue .text p {
+    color: var(--main-color-muted);
+}
+.myHeading h1 {
+    text-align: center;
     color: var(--main-color-muted);
     font-size: 4rem;
     z-index: 10;
+    padding-top: 2rem;
 }
 
-#venue .text {
+.text p {
+    font-family: var(--font-secondary);
     text-align: center;
-    color: white;
-    position: absolute;
-    bottom: 0px;
+    color: var(--color-gray);
+    font-size: 2rem;
+    padding: 1rem 1rem;
+}
+
+
+#giftsHeading {
+    position: relative;
+    /*https://css-tricks.com/tinted-images-multiple-backgrounds/*/
+   background:
+    /* top, transparent red */
+    linear-gradient(
+      rgba(64, 48, 15, 0.64),
+      rgba(64, 48, 15, 0.64)
+    ),
+    /* bottom, image */
+    url(../img/cash1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 header {
