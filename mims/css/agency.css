@@ -413,6 +413,27 @@ header.partyDetails {
     text-align: center;
 }
 
+#terms {
+    position: relative;
+    /*https://css-tricks.com/tinted-images-multiple-backgrounds/*/
+   background:
+    /* top, transparent red */
+    linear-gradient(
+      rgba(64, 48, 15, 0.64),
+      rgba(64, 48, 15, 0.64)
+    ),
+    /* bottom, image */
+    url(../img/ceremony.jpg) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+
+#terms .text p {
+    color: var(--main-color-muted);
+}
+
 .bold {
     font-weight: bold;
 }
