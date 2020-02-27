@@ -231,7 +231,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: var(--font-primary);
     font-weight: 400;
     letter-spacing: 1px;
-    color:var(--main-color-muted) !important;
+    color:var(--color-gray);
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -286,6 +286,10 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+
+    .navbar-default .nav li a {
+        color: var(--main-color-muted) !important;
+    }
 }
 
 
@@ -301,7 +305,23 @@ header.partyDetails {
     url(../img/garden-party-festival.jpg) center center;
 
     /*background-image: url('../img/garden-party-festival.jpg');*/
-    height: 50rem;
+    height: 60rem;
+    /*z-index: 1;*/
+}
+
+header.staroselDetails {
+        /*https://css-tricks.com/tinted-images-multiple-backgrounds/*/
+   background:
+    /* top, transparent red */
+    linear-gradient(
+      rgba(64, 48, 15, 0.64),
+      rgba(64, 48, 15, 0.64)
+    ),
+    /* bottom, image */
+    url(../img/starosel_small.jpg) center center;
+
+    /*background-image: url('../img/garden-party-festival.jpg');*/
+    height: 60rem;
     /*z-index: 1;*/
 }
 
@@ -387,6 +407,27 @@ header.partyDetails {
     padding-top: 2rem;
 }
 
+#starosel_second_day {
+    position: relative;
+    /*https://css-tricks.com/tinted-images-multiple-backgrounds/*/
+   background:
+    /* top, transparent red */
+    linear-gradient(
+      rgba(64, 48, 15, 0.64),
+      rgba(64, 48, 15, 0.64)
+    ),
+    /* bottom, image */
+    url(../img/starosel_spa.jpg) no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+
+#starosel_second_day .text p {
+    color: var(--main-color-muted);
+}
+
 .text p {
     font-family: var(--font-secondary);
     text-align: center;
@@ -425,7 +466,7 @@ header.partyDetails {
     /* bottom, image */
     url(../img/ceremony.jpg) no-repeat center center;
     background-size: cover;
-    height: 200px;
+    height: 100px;
     font-family: var(--font-secondary);
     text-align: center;
 }
@@ -495,13 +536,21 @@ header .intro-text .intro-heading {
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
         font-family: var(--font-secondary);
-        font-size: 40px;
+        font-size: 26px;
         font-style: italic;
-        line-height: 40px;
+        line-height: 26px;
+    }
+
+    header .intro-text .intro-description {
+        margin-bottom: 25px;
+        font-family: var(--font-secondary);
+        font-size: 18px;
+        font-style: italic;
+        line-height: 24px;
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
         text-transform: uppercase;
         font-family: var(--font-primary);
         font-size: 75px;
