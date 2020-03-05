@@ -318,7 +318,29 @@ header.staroselDetails {
       rgba(64, 48, 15, 0.64)
     ),
     /* bottom, image */
-    url(../img/starosel_small.jpg) center center;
+    url(../img/starosel.jpg) center center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*background-image: url('../img/garden-party-festival.jpg');*/
+    height: 60rem;
+    /*z-index: 1;*/
+}
+
+header.gifts {
+        /*https://css-tricks.com/tinted-images-multiple-backgrounds/*/
+   background:
+    /* top, transparent red */
+    linear-gradient(
+      rgba(64, 48, 15, 0.64),
+      rgba(64, 48, 15, 0.64)
+    ),
+    /* bottom, image */
+    url(../img/ski_small.jpg) center center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
 
     /*background-image: url('../img/garden-party-festival.jpg');*/
     height: 60rem;
@@ -331,6 +353,19 @@ header.staroselDetails {
 }
 
 .partyDetails .container .intro-text div a {
+    color: var(--main-color-primary);
+}
+
+.staroselDetails .container .intro-text div a {
+    color: var(--main-color-primary);
+}
+
+
+.partyAgenda .activity div a {
+    color: var(--main-color-primary);
+}
+
+.myHeading div a {
     color: var(--main-color-primary);
 }
 
@@ -389,9 +424,9 @@ header.staroselDetails {
       rgba(64, 48, 15, 0.64)
     ),
     /* bottom, image */
-    url(../img/jolly_sportsman.jpg) no-repeat center center;
+    url(../img/sussex.jpg) no-repeat center center;
     background-size: cover;
-    height: 200px;
+    height: 400px;
     font-family: var(--font-secondary);
     text-align: center;
 }
@@ -419,7 +454,7 @@ header.staroselDetails {
     /* bottom, image */
     url(../img/starosel_spa.jpg) no-repeat center center;
     background-size: cover;
-    height: 200px;
+    height: 300px;
     font-family: var(--font-secondary);
     text-align: center;
 }
@@ -436,24 +471,6 @@ header.staroselDetails {
     padding: 1rem 1rem;
 }
 
-
-#giftsHeading {
-    position: relative;
-    /*https://css-tricks.com/tinted-images-multiple-backgrounds/*/
-   background:
-    /* top, transparent red */
-    linear-gradient(
-      rgba(64, 48, 15, 0.64),
-      rgba(64, 48, 15, 0.64)
-    ),
-    /* bottom, image */
-    url(../img/cash1.jpg) no-repeat center center;
-    background-size: cover;
-    height: 200px;
-    font-family: var(--font-secondary);
-    text-align: center;
-}
-
 #terms {
     position: relative;
     /*https://css-tricks.com/tinted-images-multiple-backgrounds/*/
@@ -464,9 +481,10 @@ header.staroselDetails {
       rgba(64, 48, 15, 0.64)
     ),
     /* bottom, image */
-    url(../img/ceremony.jpg) no-repeat center center;
+    url(../img/maria_thinking_small.jpg) center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100px;
+    height: 400px;
     font-family: var(--font-secondary);
     text-align: center;
 }
