@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+:root {
+  --color-gray: #7b8a8b;;
+  --main-color-primary: #e8a43dd1;
+  --main-color-secondary: #fec503;
+  --main-color-secondary-dark: #333;
+  --main-color-muted: white;
+  --font-primary: 'Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif';
+  --font-secondary: '"Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif';
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url('/img/IMG_20190910_195425.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+  .intro-text {
+    padding-top: 100px;
+    padding-bottom: 500px;
+
+    .buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      a {
+        margin: 1rem;
+        padding: 1rem;
+      }
+    }
+
+    .intro-lead-in {
+      margin-bottom: 25px;
+      font-family: var(--font-secondary);
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+    }
+
+    .intro-heading {
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      font-family: var(--font-primary);
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header .intro-text {
+      padding-top: 150px;
+      padding-bottom: 500px;
+  }
+
+  header .intro-text .intro-lead-in {
+      margin-bottom: 25px;
+      font-family: var(--font-secondary);
+      font-size: 26px;
+      font-style: italic;
+      line-height: 26px;
+  }
+
+  header .intro-text .intro-description {
+      margin-bottom: 25px;
+      font-family: var(--font-secondary);
+      font-size: 18px;
+      font-style: italic;
+      line-height: 24px;
+  }
+
+  header .intro-text .intro-heading {
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      font-family: var(--font-primary);
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 75px;
+  }
+}
+
+.padTop {
+  margin-top: 5rem;
+}
